@@ -152,7 +152,7 @@ export interface BuilderConfig {
   /**
    * Generated artifact settings. Set to false to disable all.
    * Set to true to enable all and use default paths. Leave
-   * undefined for default behaviour of each artifact.
+   * undefined for default behavior of each artifact.
    */
   outputs?:
     | boolean
@@ -160,14 +160,14 @@ export interface BuilderConfig {
         /**
          * TypeScript declaration file generation settings. This file
          * contains types reflected off your source code. It is how
-         * Nexus imbues dynamic code with static guarnatees.
+         * Nexus imbues dynamic code with static guarantees.
          *
          * Defaults to being enabled when `process.env.NODE_ENV !== "production"`.
          * Set to true to enable and emit into default path (see below).
          * Set to false to disable. Set to a string to specify absolute path.
          *
          * The default path is node_modules/@types/nexus-typegen/index.d.ts.
-         * This is chosen becuase TypeScript will pick it up without
+         * This is chosen because TypeScript will pick it up without
          * any configuration needed by you. For more details about the @types
          * system refer to https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types
          */
